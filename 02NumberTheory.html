@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Number Theory | MTH 311 | Fall 2015 | Dr. Brian Beavers</title>
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  
+     <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">MTH 311 Introduction to Modern Mathematics - Fall 2015</a>
+        </div>
+      </div>
+    </nav>
+ 
+      <div class="container">
+  
+     <div class="jumbotron">
+        <h1>Number Theory</h1>
+        </div><!--jumbotron -->
+        
+<div class="pbody">
+<h2>1. Even/Odd</h2>
+<h3>1.0. Definitions and Properties</h3>
+<ol>
+  <li>An integer \(n\) is <em><strong>even</strong></em> if and only if there is an integer \(k\) such that \(n=2k\).</li>
+  <li>An integer \(n\) is <em><strong>odd</strong></em> if and only if there is an integer \(k\) such that \(n=2k+1\).</li>
+  <li>The<em><strong> integers, rational numbers, and real numbers are closed under addition, subtraction, and multiplication</strong></em>. That is, for all integers \(a\) and \(b\), the numbers \(a+b\), \(a-b\), and \(ab\) are integers. Moreover, the  rational numbers and real numbers are<em><strong> closed under division by numbers other than zero</strong></em>.</li>
+  <li><strong><em>Field Properties</em></strong>
+    <ol>
+      <li>For any real number \(a\), \(a+0=0+a=a\) (<em><strong>additive identity</strong></em> property).</li>
+      <li>For any real number \(a\), \(a\times 1=1\times a=a\) (<em><strong>multiplicative identity</strong></em> property).</li>
+      <li>For any real number \(a\), there exists a real number b such that \(a+b=b+a=0\) (<em><strong>additive inverse)</strong></em>. Moreover, \(b=-a\).</li>
+      <li>For any nonzero real number \(a\), there exists a real number b such that \(a\times b=b\times a=1\) (<em><strong>multiplicative inverse)</strong></em>. Moreover, \(b=1/a\).</li>
+      <li>For any real numbers \(a\) and \(b\), \(a+b=b+a\) and \(a\times b=b\times a\) (<em><strong>commutative property</strong></em> of addition and multiplication, respectively).</li>
+      <li>For any real numbers \(a\),  \(b\), and \(c\), \(a+(b+c)=(a+b)+c\) and \(a\times(b\times c)=(a\times b)\times c\) (<em><strong>associative property </strong></em>of addition and multiplication, respectively).</li>
+      <li>For any real numbers \(a\),  \(b\), and \(c\), \(a\times(b+c)=(a\times b)+(a\times c)\) (<em><strong>distributive property</strong></em> of multiplication over addition).</li>
+    </ol>
+  </li>
+  <li><em><strong>Trichotomy Property:</strong></em> Each real number is exactly one of the following: (1) positive, (2) negative, or (3) zero.</li>
+  <li><em><strong>Zero Product Property</strong></em>: For any real numbers \(a\) and \(b\), \(ab\)=0 if and only if \(a=0\) or \(b=0\).</li>
+  <li><em><strong>Cancellation Property of Addition:</strong></em> For any real numbers \(a\),  \(b\), and \(c\), \(a=b\) if and only if \(a+c=b+c\).</li>
+  <li><em><strong>Cancellation Property of Multiplication</strong></em>: For any real numbers \(a\),  \(b\), and \(c\) with \(c\neq 0\), \(a=b\) if and only if \(ac=bc\).</li>
+  <li><em><strong>The Division Algorithm</strong></em>: For any  integer \(a\) and positive integer \(b\), there exist unique integers \(q\) and \(r\) such that \(a=bq+r\) and \(0\leq r&lt; b\). The integer \(q\) is called the <em><strong>quotient</strong></em> and the integer \(r\) is called the <em><strong>remainder</strong></em>.</li>
+  <li><strong><em>Properties of equality:</em></strong>
+    <ul>
+      <li>For any object \(a\), \(a=a\) (<em><strong>reflexive property of equality</strong></em>).</li>
+      <li>For any objects \(a\) and \(b\), if \(a=b\), then \(b=a\) (<em><strong>symmetric property of equality</strong></em>).</li>
+      <li>For any objects \(a\), \(b\), and \(c\), if \(a=b\) and \(b=c\), then \(a=c\) (<em><strong>transitive property of equality</strong></em>).</li>
+    </ul>
+  </li>
+</ol>
+<h3> 1.1. Even/Odd Proofs - use only 1.0 Definitions and Properties</h3>
+<ol>
+  <li>The sum of two even integers is even.</li>
+  <li>The sum of two odd integers is even.</li>
+  <li>The sum of an odd integer and an even integer is odd.</li>
+  <li>The difference of two even integers is even.</li>
+  <li>The difference of two odd integers is even.</li>
+  <li>The difference of an odd and an even integer is odd.</li>
+  <li>The product of two even integers is even.</li>
+  <li>The product of two odd integers is odd.</li>
+  <li>The product of an even and an odd integer is even.</li>
+</ol>
+<h3>1.2. Even/Odd Disproofs</h3>
+<ol>
+  <li>The quotient of two even integers, if it exists, is even.</li>
+  <li>The quotient of two even integers, if it exists, is odd.</li>
+  <li>The quotient \(a/b\) of an even integer \(a\) and an odd integer \(b\), if it exists, is odd.</li>
+  <li>If the sum of two integers is even, then both of the integers are even.</li>
+  <li>If the product of two integers is even, then both of the integers are even.</li>
+</ol>
+<h3>1.3. Even/Odd Proofs - Use only 1.0 Definitions and Properties</h3>
+<ol>
+  <li>If the sum of two integers \(n+m\) is odd and \(n\) is even, then \(m\) is odd.</li>
+  <li>If the product of two integers \(nm\) is even and \(n\) is odd, then \(m\) is even.</li>
+  <li>If the sum of two integers is odd, then one of the integers is even and the other is odd.</li>
+  <li>The integer \(n\) is even if and only if the integer \(n+1\) is odd.</li>
+  <li>The integer \(n\) is odd if and only if the integer  \(n+1\) is even.</li>
+  <li>The integer \(n\) is even if and only if the integer \(-n\) is even.</li>
+  <li>The integer \(n\) is odd if and only if the integer \(-n\) is odd.</li>
+  <li>An integer cannot be both even and odd.  </li>
+  <ul>
+  <li>Proof: For a contradiction, suppose the integer \(n\) is both even and odd. Then, by definition of even and odd, there are integers \(k\) and \(l\) such that \(n=2k=2l+1\). Since \(2k=2l+1\), by field properties and the cancellation property of addition, we have that \(2k-2l=1\). By the distributive property, \(2(k-l)=1\). By the cancellation property of multiplication, since \(2\neq 0\), \(k-l=\frac{1}{2}\). By the closure property of subtraction, \(k-l\) is an integer. Thus we conclude that \(\frac{1}{2}\) is an integer, which is a contradiction. Thus it is impossible for an integer to be both even and odd. QED</li>
+  </ul>
+<li>Each integer is either even or odd but not both.</li>
+ <ul>
+  <li>Proof: Let \(n\) be an integer and use the Division Algorithm with \(a=n\) and \(b=2\). Thus, there are unique integers \(q\) and \(r\) with \(0\leq r&lt;2\) such that \(n=2q+r\). Now, \(r\) must be either 0 or 1. If \(r=0\), then \(n=2q\), and so \(n\) is even. If \(r=1\), then \(n=2q+1\), and so \(n\) is odd. By uniqueness, \(n\) cannot be both even and odd (otherwise,  \(r\) would have to be both 0 and 1).Thus \(n\) is even or odd but not both. QED</li>
+ </ul>
+<li>The integer \(n\) is even if and only if the integer \(n^2\) is even. (For this problem you may use the fact that an integer is even if and only if it is not odd, and it is odd if and only if it is not even.)</li>
+<li>The integer \(n\) is odd if and only if the integer \(n^2\) is odd. (For this problem you may use the fact that an integer is even if and only if it is not odd, and it is odd if and only if it is not even.)</li>
+</ol>
+<h2>2. Divisibility, Prime, and Composite</h2>
+<h3>2.0. Definitions &amp; Key Theorem</h3>
+<ol>
+  <li>Given integers \(n\) and \(m\), we say that  \(n\) <em><strong>divides</strong></em> \(m\) if and only if there is an integer \(k\) such that \(m=nk\). We also say, in this case, that \(m\) is a <em><strong>multiple</strong></em> of \(n\), that \(n\) is a <em><strong>factor</strong></em> of \(m\), and that \(m\) is <em><strong>divisible</strong></em> by \(n\).</li>
+  <li>An integer \(n&gt;1\) is <em><strong>prime</strong></em> if and only if the only positive integers that divide \(n\) are 1 and \(n\).</li>
+  <li>A positive integer \(n\) is <em><strong>composite</strong></em> if and only if \(n\) is not prime.</li>
+  <li>A number is <em><strong>rational</strong></em> if it can be expressed as a ratio of two integers.</li>
+  <li><em><strong>Fundamental Theorem of Arithmetic</strong></em>: Given any integer \(n&gt;1\), there exist a postive integer \(k\), distinct prime numbers \(p_1, p_2, \ldots, p_k\), and positive integers \(e_1, e_2, \ldots, e_k\) such that  \[n=p_1^{e_1}p_2^{e_2}\cdots p_k^{e_k}\]
+    and any other expression of \(n\) as a product of prime numbers is identical to this except, perhaps, for the order in which the factors are written.
+  </li>
+</ol>
+<h3>2.1. Proof or Disproof - Divisibility</h3>
+<p>Determine if each statement is true or if it is false. If it is true, prove it directly from the definitions. If it is false, give a counterexample.</p>
+<ol>
+  <li>For all integers \(a\), \(b\), and \(c\), if \(a|b\) and \(b|c\), then \(a|c\).</li>
+  <li>For all integers \(a\) and \(b\), if \(a|b\) and \(b|a\), then \(a=b\)</li>
+  <li>For all integers \(a\), \(b\), and \(c\), if \(a|b\) and \(a|c\), then \(a|(b+c)\)</li>
+  <li>The sum of any three consecutive integers is divisible by 3.</li>
+  <li>The product of any two even integers is a multiple of 4.</li>
+  <li>If an integer is divisible by 6, then the integer is divisible by 2.</li>
+  <li>If an integer is divisible by 8, then the integer is divisible by 16.</li>
+  
+  <li>For all integers \(a\), \(b\), and \(c\), if \(ab|c\) then \(a|c\) and \(b|c\).</li>
+  <li>For all integers \(a\), \(b\), and \(c\), if \(a|(b+c)\) then \(a|b\) and \(a|c\).</li>
+  <li>For all integers \(a\), \(b\), and \(c\), if \(a|(bc)\) then \(a|b\) and \(a|c\).</li>
+</ol>
+<h3>2.2. Two Classic Theorems (and a couple of Lemmas)</h3>
+<ol>
+  <li>Theorem: \(\sqrt{2}\) is an irrational number.  </li>
+  <ul>
+    <li>Proof: We proceed by contradiction. Suppose \(\sqrt{2}\) is rational. Then, there are integers \(m\) and \(n\) such that \(\frac{m}{n}=\sqrt 2\), with \(\frac{m}{n}\) in lowest terms. Squaring both sides, we obtain that \(\frac{m^2}{n^2}=2\). By the cancellation property of multiplication and field properties, \(m^2=2n^2\). Since the integers are closed under multiplication, by the definition of even we conclude that \(m^2\) is even. By 1.3.10, we conclude that \(m\) is even. Thus, by definition of even, \(m=2k\) for some integer \(k\). Thus, by substitution and field properties, \(4k^2=2n^2\). By cancellation property of multiplication, \(2k^2=n^2\). Since the integers are closed under multiplication, by the definition of even we conclude that \(n^2\) is even. By 1.3.10, we conclude that \(n\) is even. So both \(m\) and \(n\) are even. Thus \(\frac{m}{n}\) is not in lowest terms, a contradiction. Therefore, \(\sqrt{2}\) is irrational.</li>
+  </ul>
+  <li>Lemma: The only divisors of 1 are 1 and -1.  </li>
+  <ul>
+    <li>Proof: Let \(n\) be an integer. Suppose \(n\) is a divisor of \(1\). Then, \(1=nk\) for some integer \(k\). Thus, by the multiplicative identity property, we know that \(n\) and \(k\) are reciprocals.The only integers whose reciprocals are also integers are \(1\) and \(-1\). Thus \(n=1\) or \(n=-1\). QED</li>
+  </ul>
+  <li>Lemma: For any integer \(a\) and any prime number \(p\), if \(p|a\), then \(p\nmid (a+1)\).  </li>
+  <ul>
+    <li>Proof: We proceed by contradition. Let \(a\) be an integer and let \(p\) be a prime number. Suppose that \(p|a\). For a contradiction, suppose that \(p|(a+1)\). Since \(p|a\), we conclude that there is an integer \(k\) such that \(a=pk\). Since \(p|(a+1)\), we conclude that there is an integer \(q\) such that \(a+1=pq\). Now, \(1=(a+1)-a=(pq)-(pk)\). By field properties, \(1=p(q-k)\). Note that \(q-k\), being a difference of integers, is an integer. Thus \(p\) divides \(1\). However, by the previous lemma, \(p\) is \(1\) or \(-1\). This is impossible since \(p\) is a prime. Thus \(p\nmid (a+1)\). QED</li>
+  </ul>
+  <li>Theorem: There are infinitely many prime numbers.
+    <ul>
+      <li>Proof: We proceed by contradiction. Suppose there are only finitely many primes \(p_1, p_2,\ldots,p_n\). Consider the integer \(a=p_1\cdot p_2\cdot \ldots\cdot p_n +1\). Note at \(a\) is an integer that is greater than 1. By the Fundamental Theorem of Arithmetic, \(a\) can be written as a product of powers of primes. However, by the previous lemma, none of the primes \(p_1, p_2, \ldots, p_n\) can be factors of \(a\), a contradiction. Thus there must be infinitely many primes. QED</li>
+    </ul>
+  </li>
+  </ol>
+</div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

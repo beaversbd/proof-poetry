@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> </script>
+  <link href='https://fonts.googleapis.com/css?family=Anek Latin' rel='stylesheet'>
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Bitter&display=swap');
+  body {
+    font-family: 'Bitter';font-size: 18px;
+    }
+  </style>
+  <title>The sum of two odd integers is an even integer.</title>
+</head>
+
+<body>
+
+<h1>The sum of two odd integers is an even integer.</h1>
+
+<p>
+Let us prove that                                   <br>
+The sum of any two odd integers is an even integer. <br>
+</p>
+
+<p>
+We give the first even integer the name \(m\).   <br>
+We give the second even integer the name \(n\).  <br>
+Thus, the sum is expressed by the name \(m+n\).  <br>
+First, we must prove that \(m+n\) is an integer. <br>
+Second, we must prove that \(m+n\) is even.
+</p>
+
+<p>
+Recall that the integers are closed under addition. <br>
+Since \(m\) and \(n\) are integers,                 <br>
+It then follows from this closure property          <br>
+That \(m+n\) is an integer.                         <br>
+Thus we have shown the first of the two things that we were to prove.
+</p>
+
+<p>
+Recall that \(n\) is odd.  <br>
+By the definition of odd,  <br>
+There is an integer \(k\)  <br>
+Such that \(n=2k+1\).
+</p>
+
+<p>
+Recall that \(m\) is odd.  <br>
+By the definition of odd,  <br>
+There is an integer \(l\)  <br>
+Such that \(m=2l+1\).
+</p>
+
+<p>
+Recall that \(m+n\) is the sum.      <br>
+We may substitute \(2k+1\) for \(n\) <br>
+And \(2l+1\) for \(m\).              <br>
+Thus, \(m+n=(2k+1)+(2l+1)\).
+</p>
+
+<p>
+Recall the associative property of addition.                      <br>
+It says that for any real numbers \(x\), \(y\), and \(z\),        <br>
+We may conclude that \((x+y)+z=x+(y+z)\).                         <br>
+Using \(2k\) for \(x\), \(1\) for \(y\) and \((2l+1)\) for \(z\), <br>
+It follows that \((2k+1)+(2l+1)=2k+(1+(2l+1))\).                  <br>
+</p>
+
+<p>
+Recall the commutative property of addition.        <br>
+It says that for any real numbers \(x\) and \(y\),  <br>
+We may conclude that \(x+y=y+x\).                   <br>
+It follows that \(2k+(1+(2l+1))=2k+((2l+1)+1)\).      
+</p>
+
+<p>
+We may use the associative property of addition again:  <br>
+\(2k+((2l+1)+1)=2k+(2l+(1+1))\).                        <br>
+We note that \(1+1=2\):                                 <br>
+\(2k+(2l+(1+1))=2k+(2l+2)\).                            <br>
+We may use the associative property of addition again:  <br>
+\(2k+(2l+2)=(2k+2l)+2\).                               <br>
+We may use the distributive property of multiplication over addition <br>
+For the first time in this proof:                       <br>
+\((2k+2l)+2=2(k+l)+2\).                                 <br>
+And we may use the distributive property of multiplication over addition once more: <br>
+\(2(k+l)+2=2((k+l)+1)\).
+</p>
+
+<p>
+Now we know several things:                <br>
+That \(m+n=(2k+1)+(2l+1)\)                 <br>
+And that \((2k+1)+(2l+1)=2k+(1+(2l+1))\)   <br>
+And that \(2k+(1+(2l+1))=2k+((2l+1)+1)\)   <br>
+And that \(2k+((2l+1)+1)=2k+(2l+(1+1))\)   <br>
+And that \(2k+(2l+(1+1))=2k+(2l+2)\)       <br>
+And that \(2k+(2l+2)=(2k+2l)+2\)           <br>
+And that \((2k+2l)+2=2(k+l)+2\)            <br>
+And that \(2(k+l)+2=2((k+l)+1)\)           <br>
+</p>
+
+<p>
+We also know the transitive property of equality, <br>
+Which says that \(x=z\) when \(x=y\) and \(y=z\). <br>
+It follows that \(m+n=2((k+l)+1)\).
+</p>
+
+<p>
+The end is near  <br>
+Now that we know <br>
+\(m+n=2((k+l)+1)\).
+</p>
+
+<p>
+Since the integers are closed under addition, <br>
+And since \(k\) and \(l\) are integers,       <br>
+We may conclude that \(k+l\) is an integer.
+</p>
+
+<p>
+Since the integers are closed under addition, <br>
+And since \(k+l\) and \(1\) are integers,       <br>
+We may conclude that \((k+l)+1\) is an integer.   <br>
+Let us say that \(p\) is this integer \((k+l)+1\).
+  </p>
+
+<p>
+Now that we know that \((k+l)+1\) is the integer \(p\),                    <br>
+And notice that \(m+n\) can be expressed as                            <br>
+Two times the integer \(p\).                                           <br>
+We may apply the definition of even                                    <br>
+To say and to know that \(m+n\) is even.                               <br>
+Thus we have shown the second of the two things that we were to prove.
+</p>
+
+<p>
+Thus we have shown both of the two things that we were to prove.         <br>
+We have shown that when we start with two odd integers \(m\) and \(n\), <br>
+Their sum, \(m+n\), is an even integer,                                  <br>
+Quod erat demonstrandum.
+</p>
+
+</div>
+
+</body>
+</html>
